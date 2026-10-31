@@ -1,0 +1,117 @@
+{
+  "submission_id": "AMU-NAT-2024-Q3",
+  "country": "Regional Surveillance Consortium",
+  "reporting_agency": "National Veterinary Medicines Authority",
+  "records": [
+    {
+      "record_id": "REC-0001",
+      "country": "United States",
+      "year": 2024,
+      "reported_product_name": "Liquamycin LA-200",
+      "reported_active_ingredient": "Oxytetracycline",
+      "reported_pack_size": "100 mL",
+      "units_sold": 45000,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0002",
+      "country": "Germany",
+      "year": 2024,
+      "reported_product_name": "Baytril 10% Solution for Injection",
+      "reported_active_ingredient": "Enrofloxacin",
+      "reported_pack_size": "100 ml",
+      "units_sold": 12500,
+      "reported_species": "Porcine (Swine)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0003",
+      "country": "United Kingdom",
+      "year": 2024,
+      "reported_product_name": "Alamycin LA 200 mg/ml Solution for Injection",
+      "reported_active_ingredient": "Oxytetracycline",
+      "reported_pack_size": "100 ml",
+      "units_sold": 28000,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0004",
+      "country": "Australia",
+      "year": 2024,
+      "reported_product_name": "Nuflor Injectable Solution",
+      "reported_active_ingredient": "Florfenicol",
+      "reported_pack_size": "250 mL",
+      "units_sold": 8400,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Subcutaneous (SC)"
+    },
+    {
+      "record_id": "REC-0005",
+      "country": "European Union",
+      "year": 2024,
+      "reported_product_name": "Draxxin 100 mg/ml Solution for Injection",
+      "reported_active_ingredient": "Tulathromycin",
+      "reported_pack_size": "100 ml",
+      "units_sold": 15000,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Subcutaneous (SC)"
+    },
+    {
+      "record_id": "REC-0006",
+      "country": "United Kingdom",
+      "year": 2024,
+      "reported_product_name": "Synulox Ready-to-Use Suspension for Injection",
+      "reported_active_ingredient": "Amoxicillin + Clavulanic Acid",
+      "reported_pack_size": "100 ml",
+      "units_sold": 9200,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0007",
+      "country": "Kenya",
+      "year": 2024,
+      "reported_product_name": "Doxxx-Sol 500 mg/g Powder for Oral Solution",
+      "reported_active_ingredient": "Doxycycline",
+      "reported_pack_size": "1 kg",
+      "units_sold": 5400,
+      "reported_species": "Poultry (Avian)",
+      "reported_route": "Oral (In-Drinking Water)"
+    },
+    {
+      "record_id": "REC-0008",
+      "country": "United States",
+      "year": 2024,
+      "reported_product_name": "Liquamycine LA 200",
+      "reported_active_ingredient": "Oxytetracycline",
+      "reported_pack_size": "100 mL",
+      "units_sold": 6000,
+      "reported_species": "Bovine (Cattle)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0009",
+      "country": "Australia",
+      "year": 2024,
+      "reported_product_name": "Nuflor Injectable Solution",
+      "reported_active_ingredient": "Florfenicol",
+      "reported_pack_size": "500 mL",
+      "units_sold": 3000,
+      "reported_species": "Canine (Dog)",
+      "reported_route": "Intramuscular (IM)"
+    },
+    {
+      "record_id": "REC-0010",
+      "country": "Regional",
+      "year": 2024,
+      "reported_product_name": "Unregistered Veterinary Compound X-99",
+      "reported_active_ingredient": "Unknown Substance",
+      "reported_pack_size": "100 mL",
+      "units_sold": 1500,
+      "reported_species": "Poultry (Avian)",
+      "reported_route": "Oral"
+    }
+  ]
+}

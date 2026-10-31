@@ -1,0 +1,28 @@
+{
+  "country": "Denmark",
+  "year": 2024,
+  "census_items": [
+    {
+      "species_category": "swine",
+      "head_count": 12500000,
+      "custom_weight_kg": 65.0
+    },
+    {
+      "species_category": "bovine",
+      "head_count": 1500000,
+      "custom_weight_kg": 425.0
+    },
+    {
+      "species_category": "poultry",
+      "head_count": 18000000,
+      "custom_weight_kg": 1.0
+    },
+    {
+      "species_category": "aquaculture",
+      "head_count": 2500000,
+      "custom_weight_kg": 1.5
+    }
+  ],
+  "sample_active_kg": 72500.0,
+  "active_substance_inn": "Oxytetracycline"
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "title": "1 Oxytet",
+    "content": "PACKAGE LEAFLET: INFORMATION FOR THE USER\n\nTRADE NAME: Oxy-Tet 200 L.A. Long Acting Injection\nRegistration No: VMD/EA/2022-8819\nMarketing Authorisation Holder: Bimeda Animal Health Ltd.\n\n1. COMPOSITION\nEach ml contains:\nActive substance: Oxytetracycline (as oxytetracycline dihydrate) 200 mg\nExcipients: Sodium formaldehyde sulfoxylate, N-methylpyrrolidone, magnesium oxide light.\n\n2. TARGET SPECIES\nCattle (beef and dairy cows, calves), sheep (lambs, ewes), and pigs (swine, sows).\n\n3. INDICATIONS FOR USE\nIndicated for the treatment and control of a wide range of common systemic, respiratory, and local infections caused by or associated with organisms sensitive to oxytetracycline.\nSpecifically:\n- Cattle: Pasteurella multocida and Mannheimia haemolytica respiratory infections, bovine keratoconjunctivitis (pinkeye), foul-in-the-foot (foot rot), anaplasmosis.\n- Sheep: Enzootic abortion, joint ill, systemic pasteurellosis.\n- Pigs: Swine erysipelas, pneumonia, atrophic rhinitis.\n\n4. DOSAGE AND METHOD OF ADMINISTRATION\nDeep intramuscular injection.\nRecommended dosage: 20 mg/kg bodyweight (equivalent to 1 ml per 10 kg bodyweight).\n\n5. WITHDRAWAL PERIODS\nMeat and offal:\n- Cattle: 28 days\n- Pigs: 21 days\n- Sheep: 21 days\nMilk:\n- Cattle: 10 days (240 hours)\n- Sheep: 7 days\n\n6. NATURE AND CONTENTS OF IMMEDIATE PACKAGING\nAmber type II glass vials of 100 ml and 250 ml, sealed with bromobutyl rubber stoppers and aluminum tear-off caps.\nBox containing 1 x 100 ml or 1 x 250 ml vial.\n",
+    "extraction": {
+      "product_name": "Oxy-Tet 200 L.A. Long Acting Injection",
+      "registration_number": "VMD/EA/2022-8819",
+      "country": "Global",
+      "regulatory_agency": null,
+      "manufacturer": "Bimeda",
+      "active_ingredients": [
+        {
+          "raw_name": "Oxytetracycline",
+          "canonical_inn": "Oxytetracycline",
+          "atcvet_code": "QJ01AA06",
+          "chemical_class": "Tetracyclines",
+          "raw_concentration": "200 mg/mL",
+          "standard_concentration_val": 200.0,
+          "standard_concentration_unit": "mg/mL",
+          "who_classification": "HIA",
+          "woah_classification": "VHIA"
+        }
+      ],
+      "package_sizes": [
+        {
+          "raw_package_size": "1 x 250 ml",
+          "single_pack_value": 250.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 250.0,
+          "total_mass_g": null
+        },
+        {
+          "raw_package_size": "250 ml",
+          "single_pack_value": 250.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 250.0,
+          "total_mass_g": null
+        },
+        {
+          "raw_package_size": "1 x 100 ml",
+          "single_pack_value": 100.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 100.0,
+          "total_mass_g": null
+        },
+        {
+          "raw_package_size": "100 ml",
+          "single_pack_value": 100.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 100.0,
+          "total_mass_g": null
+        }
+      ],
+      "routes_of_administration": [
+        "Intramuscular (IM)"
+      ],
+      "target_species": [
+        "Bovine (Cattle)",
+        "Ovine (Sheep)",
+        "Porcine (Swine)"
+      ],
+      "indications": "Indicated for the treatment and control of a wide range of common systemic, respiratory, and local infections caused by or associated with organisms sensitive to oxytetracycline",
+      "withdrawal_period": "Meat and offal:\n- Cattle: 28 days\n- Pigs: 21 days\n- Sheep: 21 days",
+      "confidence_score": 0.98,
+      "extraction_method": "hybrid_nlp"
+    }
+  },
+  {
+    "title": "2 Baytril",
+    "content": "SUMMARY OF PRODUCT CHARACTERISTICS\n\n1. NAME OF THE VETERINARY MEDICINAL PRODUCT\nBaytril 100 mg/ml Solution for Injection\nRegistration Number: EU/VMD/049182\nManufacturer: Bayer Animal Health / Elanco Europe Ltd.\n\n2. QUALITATIVE AND QUANTITATIVE COMPOSITION\nActive substance:\nEnrofloxacin ........................ 100.0 mg per ml\nExcipients:\nn-Butanol ........................... 30.0 mg\nPotassium hydroxide (for pH adjustment)\n\n3. PHARMACEUTICAL FORM\nClear, light yellow solution for injection.\n\n4. TARGET SPECIES\nCattle (calves, adult cattle) and pigs.\n\n5. INDICATIONS FOR USE\nCattle: Treatment of respiratory tract infections caused by Enrofloxacin-susceptible Histophilus somni, Mannheimia haemolytica, Pasteurella multocida and Mycoplasma bovis.\nTreatment of acute severe mastitis caused by Escherichia coli.\nPigs: Treatment of bacterial bronchopneumonia caused by Actinobacillus pleuropneumoniae, Pasteurella multocida and complicated by Haemophilus parasuis.\n\n6. CONTRAINDICATIONS\nDo not use in growing horses because of potential damage to articular cartilage.\nDo not use in cases of known resistance to fluoroquinolones.\n\n7. ROUTE OF ADMINISTRATION\nSubcutaneous injection in cattle. Intramuscular injection in pigs in the neck behind the ear.\nIntravenous injection in severe acute E. coli mastitis.\n\n8. WITHDRAWAL PERIOD\nCattle:\nMeat and offal: Subcutaneous: 14 days; Intravenous: 5 days.\nMilk: Subcutaneous: 84 hours (3.5 days); Intravenous: 72 hours (3 days).\nPigs:\nMeat and offal: Intramuscular: 13 days.\n\n9. PRESENTATIONS\nBottles of 100 ml and 250 ml.\n",
+    "extraction": {
+      "product_name": "Baytril 100 mg/ml Solution for Injection",
+      "registration_number": "D/049182",
+      "country": "Global",
+      "regulatory_agency": null,
+      "manufacturer": "Elanco",
+      "active_ingredients": [
+        {
+          "raw_name": "Enrofloxacin",
+          "canonical_inn": "Enrofloxacin",
+          "atcvet_code": "QJ01MA90",
+          "chemical_class": "Quinolones & Fluoroquinolones",
+          "raw_concentration": "100.0 mg /ml",
+          "standard_concentration_val": 100.0,
+          "standard_concentration_unit": "mg/mL",
+          "who_classification": "Highest Priority CIA",
+          "woah_classification": "VCIA"
+        }
+      ],
+      "package_sizes": [
+        {
+          "raw_package_size": "250 ml",
+          "single_pack_value": 250.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 250.0,
+          "total_mass_g": null
+        },
+        {
+          "raw_package_size": "100 ml",
+          "single_pack_value": 100.0,
+          "single_pack_unit": "mL",
+          "total_volume_ml": 100.0,
+          "total_mass_g": null
+        }
+      ],
+      "routes_of_administration": [
+        "Intramuscular (IM)",
+        "Intravenous (IV)",
+        "Subcutaneous (SC)"
+      ],
+      "target_species": [
+        "Bovine (Cattle)",
+        "Porcine (Swine)"
+      ],
+      "indications": "Cattle: Treatment of respiratory tract infections caused by Enrofloxacin-susceptible Histophilus somni, Mannheimia haemolytica, Pasteurella multocida and Mycoplasma bovis",
+      "withdrawal_period": "Cattle:\nMeat and offal: Subcutaneous: 14 days; Intravenous: 5 days",
+      "confidence_score": 0.98,
+      "extraction_method": "hybrid_nlp"
+    }
+  }
+]

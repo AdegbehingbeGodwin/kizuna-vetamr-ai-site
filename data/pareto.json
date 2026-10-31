@@ -1,0 +1,1406 @@
+{
+  "total_products": 329,
+  "total_active_substances": 62,
+  "pareto_threshold_count": 26,
+  "pareto_threshold_percentage_of_substances": 41.9,
+  "summary": "26 of 62 primary ingredient groups (41.9%) cover at least 80% of the 329 records in this curated repository. Record frequency does not measure sales, consumption, global market coverage, or audit confidence.",
+  "pareto_curve": [
+    {
+      "rank": 1,
+      "name": "Oxytetracycline",
+      "share_pct": 10.94,
+      "cum_pct": 10.94
+    },
+    {
+      "rank": 2,
+      "name": "Florfenicol",
+      "share_pct": 7.6,
+      "cum_pct": 18.54
+    },
+    {
+      "rank": 3,
+      "name": "Procaine Penicillin",
+      "share_pct": 7.29,
+      "cum_pct": 25.84
+    },
+    {
+      "rank": 4,
+      "name": "Amoxicillin",
+      "share_pct": 6.99,
+      "cum_pct": 32.83
+    },
+    {
+      "rank": 5,
+      "name": "Enrofloxacin",
+      "share_pct": 6.69,
+      "cum_pct": 39.51
+    },
+    {
+      "rank": 6,
+      "name": "Doxycycline",
+      "share_pct": 5.78,
+      "cum_pct": 45.29
+    },
+    {
+      "rank": 7,
+      "name": "Ceftiofur",
+      "share_pct": 4.56,
+      "cum_pct": 49.85
+    },
+    {
+      "rank": 8,
+      "name": "Tylosin",
+      "share_pct": 3.34,
+      "cum_pct": 53.19
+    },
+    {
+      "rank": 9,
+      "name": "Sulfadiazine + Trimethoprim",
+      "share_pct": 3.34,
+      "cum_pct": 56.53
+    },
+    {
+      "rank": 10,
+      "name": "Marbofloxacin",
+      "share_pct": 2.74,
+      "cum_pct": 59.27
+    },
+    {
+      "rank": 11,
+      "name": "Tilmicosin",
+      "share_pct": 2.43,
+      "cum_pct": 61.7
+    },
+    {
+      "rank": 12,
+      "name": "Cefquinome",
+      "share_pct": 2.13,
+      "cum_pct": 63.83
+    },
+    {
+      "rank": 13,
+      "name": "Colistin",
+      "share_pct": 1.82,
+      "cum_pct": 65.65
+    },
+    {
+      "rank": 14,
+      "name": "Tulathromycin",
+      "share_pct": 1.52,
+      "cum_pct": 67.17
+    },
+    {
+      "rank": 15,
+      "name": "Cefalexin",
+      "share_pct": 1.52,
+      "cum_pct": 68.69
+    },
+    {
+      "rank": 16,
+      "name": "Tiamulin",
+      "share_pct": 1.22,
+      "cum_pct": 69.91
+    },
+    {
+      "rank": 17,
+      "name": "Gentamicin",
+      "share_pct": 1.22,
+      "cum_pct": 71.12
+    },
+    {
+      "rank": 18,
+      "name": "Penethamate",
+      "share_pct": 1.22,
+      "cum_pct": 72.34
+    },
+    {
+      "rank": 19,
+      "name": "Amoxicillin + Clavulanic Acid",
+      "share_pct": 1.22,
+      "cum_pct": 73.56
+    },
+    {
+      "rank": 20,
+      "name": "Flumequine",
+      "share_pct": 1.22,
+      "cum_pct": 74.77
+    },
+    {
+      "rank": 21,
+      "name": "Pradofloxacin",
+      "share_pct": 1.22,
+      "cum_pct": 75.99
+    },
+    {
+      "rank": 22,
+      "name": "Clindamycin",
+      "share_pct": 1.22,
+      "cum_pct": 77.2
+    },
+    {
+      "rank": 23,
+      "name": "Neomycin",
+      "share_pct": 0.91,
+      "cum_pct": 78.12
+    },
+    {
+      "rank": 24,
+      "name": "Danofloxacin",
+      "share_pct": 0.91,
+      "cum_pct": 79.03
+    },
+    {
+      "rank": 25,
+      "name": "Tildipirosin",
+      "share_pct": 0.91,
+      "cum_pct": 79.94
+    },
+    {
+      "rank": 26,
+      "name": "Cefoperazone",
+      "share_pct": 0.91,
+      "cum_pct": 80.85
+    },
+    {
+      "rank": 27,
+      "name": "Lincomycin",
+      "share_pct": 0.91,
+      "cum_pct": 81.76
+    },
+    {
+      "rank": 28,
+      "name": "Chlortetracycline",
+      "share_pct": 0.91,
+      "cum_pct": 82.67
+    },
+    {
+      "rank": 29,
+      "name": "Cefadroxil",
+      "share_pct": 0.91,
+      "cum_pct": 83.59
+    },
+    {
+      "rank": 30,
+      "name": "Rifaximin",
+      "share_pct": 0.91,
+      "cum_pct": 84.5
+    },
+    {
+      "rank": 31,
+      "name": "Tylvalosin",
+      "share_pct": 0.61,
+      "cum_pct": 85.11
+    },
+    {
+      "rank": 32,
+      "name": "Sulfadimidine",
+      "share_pct": 0.61,
+      "cum_pct": 85.71
+    },
+    {
+      "rank": 33,
+      "name": "Spiramycin",
+      "share_pct": 0.61,
+      "cum_pct": 86.32
+    },
+    {
+      "rank": 34,
+      "name": "Cefovecin",
+      "share_pct": 0.61,
+      "cum_pct": 86.93
+    },
+    {
+      "rank": 35,
+      "name": "Ampicillin",
+      "share_pct": 0.61,
+      "cum_pct": 87.54
+    },
+    {
+      "rank": 36,
+      "name": "Apramycin",
+      "share_pct": 0.61,
+      "cum_pct": 88.15
+    },
+    {
+      "rank": 37,
+      "name": "Dihydrostreptomycin",
+      "share_pct": 0.61,
+      "cum_pct": 88.75
+    },
+    {
+      "rank": 38,
+      "name": "Sarafloxacin",
+      "share_pct": 0.61,
+      "cum_pct": 89.36
+    },
+    {
+      "rank": 39,
+      "name": "Sulfamonomethoxine",
+      "share_pct": 0.61,
+      "cum_pct": 89.97
+    },
+    {
+      "rank": 40,
+      "name": "Cefalonium",
+      "share_pct": 0.61,
+      "cum_pct": 90.58
+    },
+    {
+      "rank": 41,
+      "name": "Fosfomycin",
+      "share_pct": 0.61,
+      "cum_pct": 91.19
+    },
+    {
+      "rank": 42,
+      "name": "Cloxacillin",
+      "share_pct": 0.61,
+      "cum_pct": 91.79
+    },
+    {
+      "rank": 43,
+      "name": "Ceftriaxone",
+      "share_pct": 0.61,
+      "cum_pct": 92.4
+    },
+    {
+      "rank": 44,
+      "name": "Spectinomycin",
+      "share_pct": 0.61,
+      "cum_pct": 93.01
+    },
+    {
+      "rank": 45,
+      "name": "Sulfadimethoxine",
+      "share_pct": 0.61,
+      "cum_pct": 93.62
+    },
+    {
+      "rank": 46,
+      "name": "Valnemulin",
+      "share_pct": 0.61,
+      "cum_pct": 94.22
+    },
+    {
+      "rank": 47,
+      "name": "Amikacin",
+      "share_pct": 0.61,
+      "cum_pct": 94.83
+    },
+    {
+      "rank": 48,
+      "name": "Cefpodoxime",
+      "share_pct": 0.61,
+      "cum_pct": 95.44
+    },
+    {
+      "rank": 49,
+      "name": "Orbifloxacin",
+      "share_pct": 0.61,
+      "cum_pct": 96.05
+    },
+    {
+      "rank": 50,
+      "name": "Gamithromycin",
+      "share_pct": 0.3,
+      "cum_pct": 96.35
+    },
+    {
+      "rank": 51,
+      "name": "Sulfadoxine + Trimethoprim",
+      "share_pct": 0.3,
+      "cum_pct": 96.66
+    },
+    {
+      "rank": 52,
+      "name": "Amoxicilina + Ácido Clavulânico",
+      "share_pct": 0.3,
+      "cum_pct": 96.96
+    },
+    {
+      "rank": 53,
+      "name": "Pirlimycin",
+      "share_pct": 0.3,
+      "cum_pct": 97.26
+    },
+    {
+      "rank": 54,
+      "name": "Erythromycin",
+      "share_pct": 0.3,
+      "cum_pct": 97.57
+    },
+    {
+      "rank": 55,
+      "name": "Sulfachlorpyridazine Sodium",
+      "share_pct": 0.3,
+      "cum_pct": 97.87
+    },
+    {
+      "rank": 56,
+      "name": "Hetacillin Potassium",
+      "share_pct": 0.3,
+      "cum_pct": 98.18
+    },
+    {
+      "rank": 57,
+      "name": "Metronidazole",
+      "share_pct": 0.3,
+      "cum_pct": 98.48
+    },
+    {
+      "rank": 58,
+      "name": "Phenoxymethylpenicillin Potassium",
+      "share_pct": 0.3,
+      "cum_pct": 98.78
+    },
+    {
+      "rank": 59,
+      "name": "Paromomycin Sulfate",
+      "share_pct": 0.3,
+      "cum_pct": 99.09
+    },
+    {
+      "rank": 60,
+      "name": "Amoxicilina Trihidrato",
+      "share_pct": 0.3,
+      "cum_pct": 99.39
+    },
+    {
+      "rank": 61,
+      "name": "Ciprofloxacin",
+      "share_pct": 0.3,
+      "cum_pct": 99.7
+    },
+    {
+      "rank": 62,
+      "name": "Thiamphenicol",
+      "share_pct": 0.3,
+      "cum_pct": 100.0
+    }
+  ],
+  "priority_benchmarks": [
+    {
+      "rank": 1,
+      "inn_name": "Oxytetracycline",
+      "chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "product_count": 36,
+      "country_coverage_count": 18,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Canada",
+        "Chile",
+        "Colombia",
+        "India",
+        "Indonesia",
+        "Ireland",
+        "Kenya",
+        "Morocco",
+        "New Zealand",
+        "Nigeria",
+        "Norway",
+        "South Africa",
+        "United Kingdom",
+        "United States",
+        "Uruguay",
+        "Vietnam"
+      ],
+      "share_percentage": 10.94,
+      "cumulative_percentage": 10.94,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 2,
+      "inn_name": "Florfenicol",
+      "chemical_class": "Amphenicols / Phenicols",
+      "woah_criticality": "VHIA",
+      "product_count": 25,
+      "country_coverage_count": 15,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Brazil",
+        "Chile",
+        "China",
+        "Colombia",
+        "Egypt",
+        "European Union",
+        "India",
+        "Mexico",
+        "Morocco",
+        "South Korea",
+        "United Kingdom",
+        "United States",
+        "Vietnam"
+      ],
+      "share_percentage": 7.6,
+      "cumulative_percentage": 18.54,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 3,
+      "inn_name": "Procaine Penicillin",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 24,
+      "country_coverage_count": 16,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Brazil",
+        "Canada",
+        "Denmark",
+        "France",
+        "Germany",
+        "India",
+        "Italy",
+        "Kenya",
+        "New Zealand",
+        "Nigeria",
+        "Philippines",
+        "South Africa",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 7.29,
+      "cumulative_percentage": 25.84,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 4,
+      "inn_name": "Amoxicillin",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 23,
+      "country_coverage_count": 16,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Belgium",
+        "Egypt",
+        "European Union",
+        "Germany",
+        "Indonesia",
+        "Kenya",
+        "Peru",
+        "South Africa",
+        "South Korea",
+        "Spain",
+        "Thailand",
+        "United Kingdom",
+        "United States",
+        "Vietnam"
+      ],
+      "share_percentage": 6.99,
+      "cumulative_percentage": 32.83,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 5,
+      "inn_name": "Enrofloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 22,
+      "country_coverage_count": 17,
+      "countries": [
+        "Argentina",
+        "Brazil",
+        "China",
+        "Colombia",
+        "European Union",
+        "Germany",
+        "India",
+        "Indonesia",
+        "Japan",
+        "Kenya",
+        "Mexico",
+        "Netherlands",
+        "Peru",
+        "South Korea",
+        "United Kingdom",
+        "United States",
+        "Vietnam"
+      ],
+      "share_percentage": 6.69,
+      "cumulative_percentage": 39.51,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 6,
+      "inn_name": "Doxycycline",
+      "chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "product_count": 19,
+      "country_coverage_count": 15,
+      "countries": [
+        "China",
+        "European Union",
+        "Finland",
+        "Indonesia",
+        "Kenya",
+        "Netherlands",
+        "Nigeria",
+        "Saudi Arabia",
+        "South Africa",
+        "South Korea",
+        "Spain",
+        "Thailand",
+        "United Kingdom",
+        "United States",
+        "Vietnam"
+      ],
+      "share_percentage": 5.78,
+      "cumulative_percentage": 45.29,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 7,
+      "inn_name": "Ceftiofur",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 15,
+      "country_coverage_count": 7,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Brazil",
+        "China",
+        "European Union",
+        "South Korea",
+        "United States"
+      ],
+      "share_percentage": 4.56,
+      "cumulative_percentage": 49.85,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 8,
+      "inn_name": "Tylosin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 11,
+      "country_coverage_count": 8,
+      "countries": [
+        "Global",
+        "Kenya",
+        "Nigeria",
+        "Saudi Arabia",
+        "South Korea",
+        "Thailand",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 3.34,
+      "cumulative_percentage": 53.19,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 9,
+      "inn_name": "Sulfadiazine + Trimethoprim",
+      "chemical_class": "Sulfonamides & Trimethoprim",
+      "woah_criticality": "VHIA",
+      "product_count": 11,
+      "country_coverage_count": 7,
+      "countries": [
+        "Australia",
+        "Kenya",
+        "Norway",
+        "Philippines",
+        "Saudi Arabia",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 3.34,
+      "cumulative_percentage": 56.53,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 10,
+      "inn_name": "Marbofloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 9,
+      "country_coverage_count": 6,
+      "countries": [
+        "Brazil",
+        "European Union",
+        "France",
+        "India",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 2.74,
+      "cumulative_percentage": 59.27,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 11,
+      "inn_name": "Tilmicosin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 8,
+      "country_coverage_count": 5,
+      "countries": [
+        "Australia",
+        "India",
+        "Peru",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 2.43,
+      "cumulative_percentage": 61.7,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 12,
+      "inn_name": "Cefquinome",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 7,
+      "country_coverage_count": 2,
+      "countries": [
+        "Australia",
+        "United Kingdom"
+      ],
+      "share_percentage": 2.13,
+      "cumulative_percentage": 63.83,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 13,
+      "inn_name": "Colistin",
+      "chemical_class": "Polymyxins",
+      "woah_criticality": "VCIA",
+      "product_count": 6,
+      "country_coverage_count": 5,
+      "countries": [
+        "Egypt",
+        "France",
+        "Japan",
+        "Kenya",
+        "Thailand"
+      ],
+      "share_percentage": 1.82,
+      "cumulative_percentage": 65.65,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 14,
+      "inn_name": "Tulathromycin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 5,
+      "country_coverage_count": 3,
+      "countries": [
+        "Canada",
+        "European Union",
+        "United States"
+      ],
+      "share_percentage": 1.52,
+      "cumulative_percentage": 67.17,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 15,
+      "inn_name": "Cefalexin",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VHIA",
+      "product_count": 5,
+      "country_coverage_count": 3,
+      "countries": [
+        "European Union",
+        "United Kingdom",
+        "United States"
+      ],
+      "share_percentage": 1.52,
+      "cumulative_percentage": 68.69,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 16,
+      "inn_name": "Tiamulin",
+      "chemical_class": "Pleuromutilins",
+      "woah_criticality": "VHIA",
+      "product_count": 4,
+      "country_coverage_count": 3,
+      "countries": [
+        "Australia",
+        "China",
+        "United States"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 69.91,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 17,
+      "inn_name": "Gentamicin",
+      "chemical_class": "Aminoglycosides",
+      "woah_criticality": "VCIA",
+      "product_count": 4,
+      "country_coverage_count": 3,
+      "countries": [
+        "Brazil",
+        "Kenya",
+        "United States"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 71.12,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 18,
+      "inn_name": "Penethamate",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 4,
+      "country_coverage_count": 3,
+      "countries": [
+        "Australia",
+        "New Zealand",
+        "United Kingdom"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 72.34,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 19,
+      "inn_name": "Amoxicillin + Clavulanic Acid",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 4,
+      "country_coverage_count": 3,
+      "countries": [
+        "European Union",
+        "South Africa",
+        "United Kingdom"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 73.56,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 20,
+      "inn_name": "Flumequine",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VHIA",
+      "product_count": 4,
+      "country_coverage_count": 2,
+      "countries": [
+        "France",
+        "Thailand"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 74.77,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 21,
+      "inn_name": "Pradofloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 4,
+      "country_coverage_count": 2,
+      "countries": [
+        "European Union",
+        "United States"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 75.99,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 22,
+      "inn_name": "Clindamycin",
+      "chemical_class": "Lincosamides",
+      "woah_criticality": "VHIA",
+      "product_count": 4,
+      "country_coverage_count": 2,
+      "countries": [
+        "European Union",
+        "United States"
+      ],
+      "share_percentage": 1.22,
+      "cumulative_percentage": 77.2,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 23,
+      "inn_name": "Neomycin",
+      "chemical_class": "Aminoglycosides",
+      "woah_criticality": "VHIA",
+      "product_count": 3,
+      "country_coverage_count": 3,
+      "countries": [
+        "Australia",
+        "Netherlands",
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 78.12,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 24,
+      "inn_name": "Danofloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 3,
+      "country_coverage_count": 2,
+      "countries": [
+        "Japan",
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 79.03,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 25,
+      "inn_name": "Tildipirosin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 3,
+      "country_coverage_count": 2,
+      "countries": [
+        "European Union",
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 79.94,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 26,
+      "inn_name": "Cefoperazone",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 3,
+      "country_coverage_count": 2,
+      "countries": [
+        "Brazil",
+        "Japan"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 80.85,
+      "benchmark_tier": "Tier 1: Priority Benchmark (80% Repository Records)"
+    },
+    {
+      "rank": 27,
+      "inn_name": "Lincomycin",
+      "chemical_class": "Lincosamides",
+      "woah_criticality": "VHIA",
+      "product_count": 3,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 81.76,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 28,
+      "inn_name": "Chlortetracycline",
+      "chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "product_count": 3,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 82.67,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 29,
+      "inn_name": "Cefadroxil",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VHIA",
+      "product_count": 3,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 83.59,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 30,
+      "inn_name": "Rifaximin",
+      "chemical_class": "Rifamycins",
+      "woah_criticality": "VHIA",
+      "product_count": 3,
+      "country_coverage_count": 1,
+      "countries": [
+        "Italy"
+      ],
+      "share_percentage": 0.91,
+      "cumulative_percentage": 84.5,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 31,
+      "inn_name": "Tylvalosin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Australia",
+        "China"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 85.11,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 32,
+      "inn_name": "Sulfadimidine",
+      "chemical_class": "Sulfonamides & Trimethoprim",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Colombia",
+        "South Africa"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 85.71,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 33,
+      "inn_name": "Spiramycin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "France",
+        "South Africa"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 86.32,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 34,
+      "inn_name": "Cefovecin",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "European Union",
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 86.93,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 35,
+      "inn_name": "Ampicillin",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Japan",
+        "United Kingdom"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 87.54,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 36,
+      "inn_name": "Apramycin",
+      "chemical_class": "Aminoglycosides",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "South Korea",
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 88.15,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 37,
+      "inn_name": "Dihydrostreptomycin",
+      "chemical_class": "Aminoglycosides",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Ireland",
+        "Kenya"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 88.75,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 38,
+      "inn_name": "Sarafloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Canada",
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 89.36,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 39,
+      "inn_name": "Sulfamonomethoxine",
+      "chemical_class": "Sulfonamides & Trimethoprim",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "China",
+        "Japan"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 89.97,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 40,
+      "inn_name": "Cefalonium",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Japan",
+        "United Kingdom"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 90.58,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 41,
+      "inn_name": "Fosfomycin",
+      "chemical_class": "Phosphonic acid derivatives",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 2,
+      "countries": [
+        "Argentina",
+        "South Africa"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 91.19,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 42,
+      "inn_name": "Cloxacillin",
+      "chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United Kingdom"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 91.79,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 43,
+      "inn_name": "Ceftriaxone",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "India"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 92.4,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 44,
+      "inn_name": "Spectinomycin",
+      "chemical_class": "Aminocyclitols",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 93.01,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 45,
+      "inn_name": "Sulfadimethoxine",
+      "chemical_class": "Sulfonamides & Trimethoprim",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 93.62,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 46,
+      "inn_name": "Valnemulin",
+      "chemical_class": "Pleuromutilins",
+      "woah_criticality": "VHIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "European Union"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 94.22,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 47,
+      "inn_name": "Amikacin",
+      "chemical_class": "Aminoglycosides",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 94.83,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 48,
+      "inn_name": "Cefpodoxime",
+      "chemical_class": "Cephalosporins",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 95.44,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 49,
+      "inn_name": "Orbifloxacin",
+      "chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "product_count": 2,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.61,
+      "cumulative_percentage": 96.05,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 50,
+      "inn_name": "Gamithromycin",
+      "chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 96.35,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 51,
+      "inn_name": "Sulfadoxine + Trimethoprim",
+      "chemical_class": "Sulfonamides & Trimethoprim",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United Kingdom"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 96.66,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 52,
+      "inn_name": "Amoxicilina + Ácido Clavulânico",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "Brazil"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 96.96,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 53,
+      "inn_name": "Pirlimycin",
+      "chemical_class": "Lincosamides",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 97.26,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 54,
+      "inn_name": "Erythromycin",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 97.57,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 55,
+      "inn_name": "Sulfachlorpyridazine Sodium",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 97.87,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 56,
+      "inn_name": "Hetacillin Potassium",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United States"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 98.18,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 57,
+      "inn_name": "Metronidazole",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "United Kingdom"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 98.48,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 58,
+      "inn_name": "Phenoxymethylpenicillin Potassium",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "European Union"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 98.78,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 59,
+      "inn_name": "Paromomycin Sulfate",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "European Union"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 99.09,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 60,
+      "inn_name": "Amoxicilina Trihidrato",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "Argentina"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 99.39,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 61,
+      "inn_name": "Ciprofloxacin",
+      "chemical_class": "Other Antibacterials",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "Brazil"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 99.7,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    },
+    {
+      "rank": 62,
+      "inn_name": "Thiamphenicol",
+      "chemical_class": "Amphenicols / Phenicols",
+      "woah_criticality": "VHIA",
+      "product_count": 1,
+      "country_coverage_count": 1,
+      "countries": [
+        "Japan"
+      ],
+      "share_percentage": 0.3,
+      "cumulative_percentage": 100.0,
+      "benchmark_tier": "Tier 2: Regional / Supplementary"
+    }
+  ]
+}

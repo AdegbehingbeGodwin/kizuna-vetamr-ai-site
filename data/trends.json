@@ -1,0 +1,56 @@
+{
+  "total_products": 329,
+  "countries_count": 38,
+  "by_chemical_class": {
+    "Penicillins (Beta-lactams)": 59,
+    "Tetracyclines": 58,
+    "Quinolones & Fluoroquinolones": 46,
+    "Cephalosporins": 41,
+    "Macrolides": 32,
+    "Amphenicols / Phenicols": 26,
+    "Sulfonamides & Trimethoprim": 18,
+    "Aminoglycosides": 13,
+    "Other Antibacterials": 9,
+    "Lincosamides": 8
+  },
+  "by_criticality": {
+    "VHIA": 210,
+    "VCIA": 119
+  },
+  "by_species": {
+    "Bovine (Cattle)": 218,
+    "Porcine (Swine)": 182,
+    "Ovine (Sheep)": 77,
+    "Poultry (Avian)": 65,
+    "Canine (Dog)": 45,
+    "Equine (Horse)": 33,
+    "Feline (Cat)": 26,
+    "Caprine (Goat)": 19,
+    "Aquaculture (Fish)": 17,
+    "Camelids (Camel)": 6
+  },
+  "by_route": {
+    "Intramuscular (IM)": 135,
+    "Subcutaneous (SC)": 70,
+    "Oral (In-Drinking Water)": 60,
+    "Oral (General)": 35,
+    "Oral (In-Feed / Premix)": 28,
+    "Intravenous (IV)": 26,
+    "Intramammary": 24,
+    "Oral (Bolus / Tablet)": 19
+  },
+  "by_country": {
+    "United States": 89,
+    "United Kingdom": 40,
+    "European Union": 25,
+    "Australia": 16,
+    "Kenya": 13,
+    "South Africa": 11,
+    "Brazil": 11,
+    "India": 10,
+    "France": 9,
+    "Argentina": 8,
+    "Japan": 8,
+    "Nigeria": 7
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Terramycin LA 200 (Zoetis - US)",
+    "barcode": "(01)00300694120015(17)261231(10)LOT-TX8921(21)SN100482",
+    "gtin": "00300694120015",
+    "inn": "Oxytetracycline",
+    "product_name": "Terramycin LA 200mg/ml Injectable"
+  },
+  {
+    "label": "Baytril 100 (Elanco - Global)",
+    "barcode": "(01)00845123000542(17)270630(10)LOT-BY4019(21)SN948123",
+    "gtin": "00845123000542",
+    "inn": "Enrofloxacin",
+    "product_name": "Baytril 10% Solution"
+  },
+  {
+    "label": "Coliscour Oral (Ceva - France)",
+    "barcode": "(01)03401298711045(17)251130(10)LOT-FR7712(21)SN552190",
+    "gtin": "03401298711045",
+    "inn": "Colistin",
+    "product_name": "Coliscour Oral Suspension"
+  }
+]

@@ -1,0 +1,327 @@
+{
+  "total_records": 10,
+  "verified_count": 8,
+  "warning_count": 1,
+  "discrepancy_count": 1,
+  "divergence_alerts_count": 0,
+  "data_quality_score": 87.0,
+  "total_active_substance_kg": 5796.0,
+  "vcia_active_substance_kg": 275.0,
+  "vcia_percentage": 4.7,
+  "top_antimicrobial_classes": {
+    "Tetracyclines": 4280.0,
+    "Amphenicols / Phenicols": 1080.0,
+    "Penicillins (Beta-lactams)": 161.0,
+    "Macrolides": 150.0,
+    "Quinolones & Fluoroquinolones": 125.0
+  },
+  "detailed_rows": [
+    {
+      "record_id": "REC-0001",
+      "country": "United States",
+      "reported_product_name": "Liquamycin LA-200",
+      "reported_pack_size": "100 mL",
+      "units_sold": 45000,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 1,
+      "matched_product_name": "Liquamycin LA-200",
+      "matched_inn": "Oxytetracycline",
+      "matched_atcvet": "QJ01AA06",
+      "matched_chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "100 mL",
+      "verified_concentration": "200.0 mg/mL",
+      "calculated_active_substance_kg": 900.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Oxytetracycline",
+          "chemical_class": "Tetracyclines",
+          "woah_criticality": "VHIA",
+          "concentration": "200.0 mg/mL",
+          "active_kg": 900.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0002",
+      "country": "Germany",
+      "reported_product_name": "Baytril 10% Solution for Injection",
+      "reported_pack_size": "100 ml",
+      "units_sold": 12500,
+      "reported_species": "Porcine (Swine)",
+      "matched_product_id": 4,
+      "matched_product_name": "Baytril 10% Solution for Injection",
+      "matched_inn": "Enrofloxacin",
+      "matched_atcvet": "QJ01MA90",
+      "matched_chemical_class": "Quinolones & Fluoroquinolones",
+      "woah_criticality": "VCIA",
+      "verified_pack_size": "100 ml",
+      "verified_concentration": "100.0 mg/mL",
+      "calculated_active_substance_kg": 125.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Enrofloxacin",
+          "chemical_class": "Quinolones & Fluoroquinolones",
+          "woah_criticality": "VCIA",
+          "concentration": "100.0 mg/mL",
+          "active_kg": 125.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0003",
+      "country": "United Kingdom",
+      "reported_product_name": "Alamycin LA 200 mg/ml Solution for Injection",
+      "reported_pack_size": "100 ml",
+      "units_sold": 28000,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 2,
+      "matched_product_name": "Alamycin LA 200 mg/ml Solution for Injection",
+      "matched_inn": "Oxytetracycline",
+      "matched_atcvet": "QJ01AA06",
+      "matched_chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "100 ml",
+      "verified_concentration": "200.0 mg/mL",
+      "calculated_active_substance_kg": 560.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Oxytetracycline",
+          "chemical_class": "Tetracyclines",
+          "woah_criticality": "VHIA",
+          "concentration": "200.0 mg/mL",
+          "active_kg": 560.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0004",
+      "country": "Australia",
+      "reported_product_name": "Nuflor Injectable Solution",
+      "reported_pack_size": "250 mL",
+      "units_sold": 8400,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 5,
+      "matched_product_name": "Nuflor Injectable Solution",
+      "matched_inn": "Florfenicol",
+      "matched_atcvet": "QJ01BA02",
+      "matched_chemical_class": "Amphenicols / Phenicols",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "100 mL",
+      "verified_concentration": "300.0 mg/mL",
+      "calculated_active_substance_kg": 630.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Florfenicol",
+          "chemical_class": "Amphenicols / Phenicols",
+          "woah_criticality": "VHIA",
+          "concentration": "300.0 mg/mL",
+          "active_kg": 630.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0005",
+      "country": "European Union",
+      "reported_product_name": "Draxxin 100 mg/ml Solution for Injection",
+      "reported_pack_size": "100 ml",
+      "units_sold": 15000,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 3,
+      "matched_product_name": "Draxxin 100 mg/ml Solution for Injection",
+      "matched_inn": "Tulathromycin",
+      "matched_atcvet": "QJ01FA94",
+      "matched_chemical_class": "Macrolides",
+      "woah_criticality": "VCIA",
+      "verified_pack_size": "50 ml",
+      "verified_concentration": "100.0 mg/mL",
+      "calculated_active_substance_kg": 150.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Tulathromycin",
+          "chemical_class": "Macrolides",
+          "woah_criticality": "VCIA",
+          "concentration": "100.0 mg/mL",
+          "active_kg": 150.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0006",
+      "country": "United Kingdom",
+      "reported_product_name": "Synulox Ready-to-Use Suspension for Injection",
+      "reported_pack_size": "100 ml",
+      "units_sold": 9200,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 10,
+      "matched_product_name": "Synulox Ready-to-Use Suspension for Injection",
+      "matched_inn": "Amoxicillin + Clavulanic Acid",
+      "matched_atcvet": "QJ01CA04",
+      "matched_chemical_class": "Penicillins (Beta-lactams)",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "40 ml",
+      "verified_concentration": "Amoxicillin: 140.0 mg/mL + Clavulanic Acid: 35.0 mg/mL",
+      "calculated_active_substance_kg": 161.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Amoxicillin",
+          "chemical_class": "Penicillins (Beta-lactams)",
+          "woah_criticality": "VHIA",
+          "concentration": "140.0 mg/mL",
+          "active_kg": 128.8
+        },
+        {
+          "canonical_inn": "Clavulanic Acid",
+          "chemical_class": "Penicillins (Beta-lactams)",
+          "woah_criticality": "VHIA",
+          "concentration": "35.0 mg/mL",
+          "active_kg": 32.2
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [
+        "Multi-ingredient combination product: 2 active substances apportioned (Amoxicillin, Clavulanic Acid)"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0007",
+      "country": "Kenya",
+      "reported_product_name": "Doxxx-Sol 500 mg/g Powder for Oral Solution",
+      "reported_pack_size": "1 kg",
+      "units_sold": 5400,
+      "reported_species": "Poultry (Avian)",
+      "matched_product_id": 12,
+      "matched_product_name": "Doxxx-Sol 500 mg/g Powder for Oral Solution",
+      "matched_inn": "Doxycycline",
+      "matched_atcvet": "QJ01AA02",
+      "matched_chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "1 kg",
+      "verified_concentration": "500.0 mg/g",
+      "calculated_active_substance_kg": 2700.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Doxycycline",
+          "chemical_class": "Tetracyclines",
+          "woah_criticality": "VHIA",
+          "concentration": "500.0 mg/g",
+          "active_kg": 2700.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0008",
+      "country": "United States",
+      "reported_product_name": "Liquamycine LA 200",
+      "reported_pack_size": "100 mL",
+      "units_sold": 6000,
+      "reported_species": "Bovine (Cattle)",
+      "matched_product_id": 1,
+      "matched_product_name": "Liquamycin LA-200",
+      "matched_inn": "Oxytetracycline",
+      "matched_atcvet": "QJ01AA06",
+      "matched_chemical_class": "Tetracyclines",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "100 mL",
+      "verified_concentration": "200.0 mg/mL",
+      "calculated_active_substance_kg": 120.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Oxytetracycline",
+          "chemical_class": "Tetracyclines",
+          "woah_criticality": "VHIA",
+          "concentration": "200.0 mg/mL",
+          "active_kg": 120.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "VERIFIED",
+      "flags": [],
+      "confidence": 0.91
+    },
+    {
+      "record_id": "REC-0009",
+      "country": "Australia",
+      "reported_product_name": "Nuflor Injectable Solution",
+      "reported_pack_size": "500 mL",
+      "units_sold": 3000,
+      "reported_species": "Canine (Dog)",
+      "matched_product_id": 5,
+      "matched_product_name": "Nuflor Injectable Solution",
+      "matched_inn": "Florfenicol",
+      "matched_atcvet": "QJ01BA02",
+      "matched_chemical_class": "Amphenicols / Phenicols",
+      "woah_criticality": "VHIA",
+      "verified_pack_size": "100 mL",
+      "verified_concentration": "300.0 mg/mL",
+      "calculated_active_substance_kg": 450.0,
+      "active_ingredients_breakdown": [
+        {
+          "canonical_inn": "Florfenicol",
+          "chemical_class": "Amphenicols / Phenicols",
+          "woah_criticality": "VHIA",
+          "concentration": "300.0 mg/mL",
+          "active_kg": 450.0
+        }
+      ],
+      "divergence_alerts": [],
+      "status": "WARNING",
+      "flags": [
+        "Pack size '500 mL' differs from primary registered presentation '100 mL'",
+        "Possible off-label AMU: Canine (Dog) not listed among registered target species (Bovine (Cattle))"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "record_id": "REC-0010",
+      "country": "Regional",
+      "reported_product_name": "Unregistered Veterinary Compound X-99",
+      "reported_pack_size": "100 mL",
+      "units_sold": 1500,
+      "reported_species": "Poultry (Avian)",
+      "matched_product_id": null,
+      "matched_product_name": null,
+      "matched_inn": null,
+      "matched_atcvet": null,
+      "matched_chemical_class": null,
+      "woah_criticality": null,
+      "verified_pack_size": null,
+      "verified_concentration": null,
+      "calculated_active_substance_kg": 0.0,
+      "active_ingredients_breakdown": [],
+      "divergence_alerts": [],
+      "status": "DISCREPANCY",
+      "flags": [
+        "Unrecognized product: not found in verified global repository",
+        "No supported reference concentration; mass is uncalculated and excluded from totals, not evidence of zero use"
+      ],
+      "confidence": 0.2
+    }
+  ]
+}

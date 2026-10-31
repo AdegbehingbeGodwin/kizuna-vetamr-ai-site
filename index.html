@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-runtime="static">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetAMR-AI | Veterinary Antibiotic Intelligence</title>
+  <meta name="description" content="Explore veterinary antibiotic reference data, extract product details, and review antimicrobial use calculations with VetAMR-AI.">
+  
+  <!-- Chart.js for data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-ui-content>
+
+  <!-- WOAH Brand Top Stripe -->
+  <div class="brand-top-stripe" aria-hidden="true"></div>
+
+<!-- Site Header -->
+  <header class="site-header" data-ui-actions>
+    <div class="brand-wrapper">
+      <div data-ui-stack style="gap: 4px;">
+        <div class="brand-title">
+          <span class="brand-name">VetAMR-AI</span>
+          <span class="badge badge-woah">Reference workspace</span>
+        </div>
+        <p class="brand-subtitle">Veterinary Antibiotic Intelligence</p>
+      </div>
+    </div>
+
+    <!-- Apple-style Segmented Navigation Control -->
+    <nav class="ui-segmented-control" role="tablist" aria-label="Surveillance workspaces">
+      <button role="tab" aria-selected="true" id="nav-repository" onclick="switchTab('repository')" class="active">
+        <i data-lucide="database" style="width: 15px; height: 15px;"></i>
+        <span>Repository</span>
+      </button>
+      <button role="tab" aria-selected="false" id="nav-extractor" onclick="switchTab('extractor')">
+        <i data-lucide="file-search" style="width: 15px; height: 15px;"></i>
+        <span>AI Extractor</span>
+      </button>
+      <button role="tab" aria-selected="false" id="nav-analytics" onclick="switchTab('analytics')">
+        <i data-lucide="bar-chart-2" style="width: 15px; height: 15px;"></i>
+        <span>Pareto &amp; Trends</span>
+      </button>
+      <button role="tab" aria-selected="false" id="nav-verification" onclick="switchTab('verification')">
+        <i data-lucide="clipboard-check" style="width: 15px; height: 15px;"></i>
+        <span>AMU Verification</span>
+      </button>
+      <button role="tab" aria-selected="false" id="nav-brief" onclick="switchTab('brief')">
+        <i data-lucide="book-open" style="width: 15px; height: 15px;"></i>
+        <span>Policy &amp; Methodology</span>
+      </button>
+    </nav>
+
+    <!-- Header Actions & Settings -->
+    <div data-ui-actions data-ui-container>
+      <div class="badge badge-woah" id="repo-count-badge" data-ui-number style="font-size: 12px; padding: 6px 10px;">
+        Loading count...
+      </div>
+      <button type="button" onclick="triggerCurationAgent()" id="btn-curation-agent" title="Run continuous regulatory curation agent">
+        <i data-lucide="bot" style="width: 15px; height: 15px; color: var(--accent);"></i>
+        <span>Load Curated Records</span>
+      </button>
+      <button type="button" onclick="toggleTheme()" id="theme-toggle-btn" aria-label="Toggle color theme" title="Toggle color theme">
+        <i data-lucide="sun" id="theme-icon" style="width: 15px; height: 15px;"></i>
+        <span>Theme</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Workspaces Container -->
+  <main class="main-content" data-ui-content>
+
+    <!-- ====================================================================
+         TAB 1: Global Reference Repository
+         ==================================================================== -->
+    <section id="tab-repository" class="tab-panel" data-ui-stack>
+      <!-- WOAH Institutional Mandate & Framework Bar -->
+      <div class="woah-institutional-strip">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <span class="badge badge-woah">REFERENCE WORKSPACE</span>
+          <span style="font-size: 14px; font-weight: 500; color: var(--ui-text);">
+            Explore product references, extract formulation details, and review antimicrobial use
+          </span>
+        </div>
+        <div data-ui-actions style="gap: 8px;">
+          <span class="badge badge-via" style="font-size: 12px;">329 Reference Records</span>
+          <span class="badge badge-woah" style="font-size: 12px;">Zero API Cost</span>
+        </div>
+      </div>
+
+      <!-- Panel Header Card -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+          <div data-ui-stack data-ui-align="start" style="gap: 8px;">
+            <h2 data-ui-align-item>Global Reference Repository</h2>
+            <p data-ui-align-item style="color: var(--muted); font-size: 14px;">
+              Curated demonstration catalog. Product details and authorisation status require source verification.
+            </p>
+          </div>
+          <div data-ui-actions data-ui-container>
+            <button type="button" onclick="loadProducts()" title="Refresh products list">
+              <i data-lucide="refresh-cw" style="width: 14px; height: 14px;"></i>
+              <span>Refresh list</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Regulatory Connectors & CDC Activity Bar -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="live-pulse" title="Offline fixtures by default"></div>
+            <div>
+              <span style="font-weight: 600; font-size: 14px;">Registry Connector Demonstration</span>
+              <span style="color: var(--muted); font-size: 12px; margin-left: 6px;">FDA experimental connector &bull; EMA demonstration fixtures</span>
+            </div>
+          </div>
+          <div data-ui-actions data-ui-container>
+            <button type="button" onclick="triggerRegulatorySync()" id="btn-sync-regulatory" title="Inspect connector demonstration results">
+              <i data-lucide="radio" style="width: 14px; height: 14px;"></i>
+              <span>Sync Regulatory Feeds</span>
+            </button>
+            <button type="button" onclick="toggleCdcLedgerDrawer()" id="btn-toggle-cdc" title="Toggle CDC change log">
+              <i data-lucide="activity" style="width: 14px; height: 14px;"></i>
+              <span>View CDC Log</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collapsible CDC Change Log Drawer -->
+      <div id="cdc-log-drawer" class="ui-panel" data-ui-radius style="display: none;">
+        <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3>Change Data Capture (CDC) Event Ledger</h3>
+            <span id="cdc-log-timestamp" style="font-size: 12px; color: var(--muted);">Live</span>
+          </div>
+          <div id="cdc-log-entries" style="display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto;">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters & Search Toolbar -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+            <div data-ui-stack style="gap: 8px;">
+              <label for="filter-search" style="font-size: 12px; font-weight: 500; color: var(--muted);">Search product or active substance</label>
+              <input type="text" id="filter-search" placeholder="e.g. Oxytetracycline, Zoetis..." oninput="debounceFilter()">
+            </div>
+            <div data-ui-stack style="gap: 8px;">
+              <label for="filter-country" style="font-size: 12px; font-weight: 500; color: var(--muted);">Country or jurisdiction</label>
+              <select id="filter-country" onchange="loadProducts()">
+                <option value="All">All jurisdictions</option>
+              </select>
+            </div>
+            <div data-ui-stack style="gap: 8px;">
+              <label for="filter-class" style="font-size: 12px; font-weight: 500; color: var(--muted);">Chemical class</label>
+              <select id="filter-class" onchange="loadProducts()">
+                <option value="All">All chemical classes</option>
+              </select>
+            </div>
+            <div data-ui-stack style="gap: 8px;">
+              <label for="filter-species" style="font-size: 12px; font-weight: 500; color: var(--muted);">Target animal species</label>
+              <select id="filter-species" onchange="loadProducts()">
+                <option value="All">All target species</option>
+              </select>
+            </div>
+            <div data-ui-stack style="gap: 8px;">
+              <label for="filter-criticality" style="font-size: 12px; font-weight: 500; color: var(--muted);">Criticality tier (WOAH)</label>
+              <select id="filter-criticality" onchange="loadProducts()">
+                <option value="All">All criticality tiers</option>
+                <option value="VCIA">Critically Important (VCIA)</option>
+                <option value="VHIA">Highly Important (VHIA)</option>
+                <option value="VIA">Important (VIA)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Data Table -->
+      <div class="ui-panel" style="padding: 0; overflow: hidden;">
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" style="min-width: 220px;">Product and registration</th>
+                <th scope="col" style="min-width: 200px;">Active substance and code</th>
+                <th scope="col" style="min-width: 140px;">Standard strength</th>
+                <th scope="col" style="min-width: 160px;">Country and agency</th>
+                <th scope="col" style="min-width: 180px;">Target animal species</th>
+                <th scope="col" style="min-width: 110px;">Criticality</th>
+                <th scope="col" style="text-align: right; min-width: 90px;" class="ui-numeric">Inspect</th>
+              </tr>
+            </thead>
+            <tbody id="products-table-body">
+              <tr>
+                <td colspan="7" style="padding: 32px; text-align: center; color: var(--muted);">
+                  Loading curated product records...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 2: AI Document & Leaflet Extractor
+         ==================================================================== -->
+    <section id="tab-extractor" class="tab-panel" data-ui-stack style="display: none;">
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner>
+          <div data-ui-stack style="gap: 4px;">
+            <h2>AI Multi-Modal Leaflet &amp; Barcode Extractor</h2>
+            <p style="color: var(--muted); font-size: 14px;">
+              Extract product name, active ingredient, metric concentration, package size, route, and target animal species from packaging inserts or GS1 DataMatrix 2D barcodes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GS1 DataMatrix Barcode Resolver Card -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h3>GS1 DataMatrix &amp; 2D Barcode Resolver</h3>
+              <p style="color: var(--muted); font-size: 14px;">Decodes GS1 Application Identifiers ((01) GTIN, (10) Lot, (17) Expiry, (21) Serial) and matches product records.</p>
+            </div>
+            <div data-ui-actions style="gap: 8px;">
+              <span style="font-size: 12px; color: var(--muted);">Sample codes:</span>
+              <button type="button" onclick="loadSampleBarcode(0)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Terramycin LA</span></button>
+              <button type="button" onclick="loadSampleBarcode(1)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Baytril 100</span></button>
+              <button type="button" onclick="loadSampleBarcode(2)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Coliscour Oral</span></button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <input type="text" id="barcode-input" placeholder="Scan or enter GS1 DataMatrix string, e.g. (01)00300694120015(17)261231(10)LOT-TX8921(21)SN100482" style="flex: 1; min-width: 280px; font-family: var(--ui-mono); font-size: 14px;">
+            <button type="button" class="btn-primary" onclick="resolveBarcode()" style="min-height: 38px;">
+              <i data-lucide="scan" style="width: 15px; height: 15px;"></i>
+              <span>Resolve Barcode</span>
+            </button>
+          </div>
+          <div id="barcode-result-display" style="display: none; padding: 12px 14px; border-radius: 8px; background: var(--ui-surface-subtle); border: 1px solid var(--ui-border); font-size: 14px;">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+        <!-- Left: Input Area -->
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <span style="font-size: 14px; font-weight: 600;">Input document</span>
+              <div data-ui-actions style="gap: 8px; flex-wrap: wrap;">
+                <span style="font-size: 12px; color: var(--muted);">Presets:</span>
+                <button type="button" onclick="loadSampleLeaflet(0)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Oxytetracycline</span></button>
+                <button type="button" onclick="loadSampleLeaflet(1)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Enrofloxacin</span></button>
+                <button type="button" onclick="loadMultilingualSample(0)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>ES: Oxitetra</span></button>
+                <button type="button" onclick="loadMultilingualSample(1)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>FR: Enroxil</span></button>
+                <button type="button" onclick="loadMultilingualSample(2)" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>PT: Amoxifin</span></button>
+              </div>
+            </div>
+
+            <!-- Upload Area -->
+            <div id="drop-zone" onclick="document.getElementById('file-upload').click()"
+                 style="border: 1px dashed var(--ui-border); border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; background: var(--ui-surface);">
+              <input type="file" id="file-upload" style="display: none;" accept=".pdf,.txt" onchange="handleFileUpload(event)">
+              <i data-lucide="file-up" style="width: 24px; height: 24px; margin: 0 auto 6px; color: var(--muted);"></i>
+              <p id="upload-label" style="font-size: 14px; font-weight: 500;">Upload leaflet PDF or plain text file</p>
+              <p style="font-size: 12px; color: var(--muted); margin-top: 2px;">Click to browse file</p>
+            </div>
+
+            <div data-ui-stack style="gap: 8px;">
+              <label for="raw-text-input" style="font-size: 12px; font-weight: 500; color: var(--muted);">Document text</label>
+              <textarea id="raw-text-input" rows="8" placeholder="Paste product leaflet or insert text here..."></textarea>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div data-ui-stack style="gap: 8px;">
+                <label for="extract-country" style="font-size: 12px; font-weight: 500; color: var(--muted);">Country</label>
+                <input type="text" id="extract-country" value="United States">
+              </div>
+              <div data-ui-stack style="gap: 8px;">
+                <label for="extract-agency" style="font-size: 12px; font-weight: 500; color: var(--muted);">Agency</label>
+                <input type="text" id="extract-agency" placeholder="e.g. US FDA CVM">
+              </div>
+            </div>
+
+            <div data-ui-actions style="width: 100%;">
+              <button type="button" class="btn-primary" onclick="runExtraction()" id="btn-extract" style="width: 100%; min-height: 38px;">
+                <i data-lucide="cpu" style="width: 16px; height: 16px;"></i>
+                <span>Run Entity Extraction</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Structured Output Schema -->
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 16px; height: 100%; justify-content: space-between;">
+            <div data-ui-stack style="gap: 12px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid var(--ui-border);">
+                <h3>Standardized Product Schema</h3>
+                <span id="extraction-status" class="badge" style="background: var(--ui-surface); color: var(--muted); border: 1px solid var(--ui-border);">Ready</span>
+              </div>
+
+              <div id="extraction-results-container" style="min-height: 200px;">
+                <div style="padding: 48px 16px; text-align: center; color: var(--muted);">
+                  <i data-lucide="scan-line" style="width: 32px; height: 32px; margin: 0 auto 8px; opacity: 0.5;"></i>
+                  <p>Run extraction or click a preset to inspect standardized entities.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="extraction-actions" style="display: none; padding-top: 12px; border-top: 1px solid var(--ui-border); justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;" data-ui-actions>
+              <span style="font-size: 12px; color: var(--muted);">Review extracted fields against the source</span>
+              <button type="button" class="btn-primary" onclick="consolidateExtractedProduct()" id="btn-consolidate">
+                <i data-lucide="plus" style="width: 15px; height: 15px;"></i>
+                <span>Consolidate into Repository</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 3: Pareto Analytics, Global Trends & Geospatial Deck
+         ==================================================================== -->
+    <section id="tab-analytics" class="tab-panel" data-ui-stack style="display: none;">
+      <!-- KPI Overview Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <div class="stat-card">
+          <span class="stat-label">Total registered formulations</span>
+          <span class="stat-value" id="stat-total-products" data-ui-number>-</span>
+          <span class="stat-footnote">Active commercial presentations</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Distinct active substances</span>
+          <span class="stat-value" id="stat-active-substances" data-ui-number>-</span>
+          <span class="stat-footnote">Harmonized INN entities</span>
+        </div>
+        <div class="stat-card featured-card">
+          <span class="stat-label">80% Pareto threshold</span>
+          <span class="stat-value" id="stat-pareto-count" data-ui-number style="color: var(--accent);">-</span>
+          <span class="stat-footnote">Priority verification benchmarks</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">VCIA criticality proportion</span>
+          <span class="stat-value" id="stat-vcia-pct" data-ui-number style="color: #e11d48;">-</span>
+          <span class="stat-footnote">WHO/WOAH high priority agents</span>
+        </div>
+      </div>
+
+      <!-- Pareto 80/20 Concentration Chart -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 16px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div data-ui-stack style="gap: 4px;">
+              <h2>Pareto 80/20 Cumulative Distribution</h2>
+              <p style="color: var(--muted); font-size: 14px;">Ranks primary ingredient groups by frequency in this curated snapshot; this does not measure consumption.</p>
+            </div>
+            <span class="badge badge-vhia" style="font-size: 12px;">80% of catalog records</span>
+          </div>
+          <div style="height: 300px; width: 100%;">
+            <canvas id="paretoChart"></canvas>
+          </div>
+          <div id="pareto-insight-text" style="padding: 12px 16px; border-radius: 10px; background: var(--ui-surface); border: 1px solid var(--ui-border); font-size: 14px; line-height: 1.5;">
+            Computing Pareto distribution...
+          </div>
+        </div>
+      </div>
+
+      <!-- Geospatial AMR Surveillance Deck -->
+      <div class="ui-panel" style="padding: 0; overflow: hidden;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--ui-border); background: var(--ui-surface-subtle); flex-wrap: wrap; gap: 8px;">
+          <div>
+            <h3>Catalog Composition by Jurisdiction</h3>
+            <p style="color: var(--muted); font-size: 14px;">Counts and VCIA shares within this curated catalog. These do not measure national stewardship, consumption, or AMR risk.</p>
+          </div>
+          <button type="button" onclick="loadGeoSurveillance()">
+            <i data-lucide="refresh-cw" style="width: 14px; height: 14px;"></i>
+            <span>Refresh geo data</span>
+          </button>
+        </div>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" style="min-width: 160px;">Country / Authority</th>
+                <th scope="col" style="min-width: 90px;">Region</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Total formulations</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Active substances</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">VCIA critical share</th>
+                <th scope="col" style="min-width: 180px;">Dominant chemical class</th>
+                <th scope="col" style="min-width: 180px;">Catalog VCIA share band</th>
+              </tr>
+            </thead>
+            <tbody id="geo-surveillance-table-body">
+              <tr>
+                <td colspan="7" style="padding: 24px; text-align: center; color: var(--muted);">
+                  Loading geospatial surveillance indicators...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Chemical Classes and Target Species Distributions -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px;">
+            <h3>Distribution by Chemical Class</h3>
+            <div style="height: 260px; width: 100%;">
+              <canvas id="classChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px;">
+            <h3>Target Animal Species</h3>
+            <div style="height: 260px; width: 100%;">
+              <canvas id="speciesChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Priority Benchmark Table -->
+      <div class="ui-panel" style="padding: 0; overflow: hidden;">
+        <div style="padding: 14px 16px; border-bottom: 1px solid var(--ui-border); background: var(--ui-surface-subtle);">
+          <h3>Priority Reference Benchmark List</h3>
+        </div>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" style="width: 60px;">Rank</th>
+                <th scope="col">Active substance</th>
+                <th scope="col">Chemical class</th>
+                <th scope="col">Criticality</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Registered count</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Country spread</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Share</th>
+                <th scope="col" style="text-align: right;" class="ui-numeric">Cumulative</th>
+                <th scope="col">Benchmark tier</th>
+              </tr>
+            </thead>
+            <tbody id="pareto-table-body">
+              <!-- Populated by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 4: AMU Data Verification Workbench & PCU Engine
+         ==================================================================== -->
+    <section id="tab-verification" class="tab-panel" data-ui-stack style="display: none;">
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+          <div data-ui-stack style="gap: 8px;">
+            <h2>National AMU Verification Workbench</h2>
+            <p style="color: var(--muted); font-size: 14px;">
+              Cross-check national antimicrobial sales submissions against reference records. Compute active substance in kilograms, detect regulatory divergence, and export WOAH ANIMUSE submissions.
+            </p>
+          </div>
+          <div data-ui-actions data-ui-container>
+            <button type="button" onclick="loadSampleAMUSubmission()">
+              <i data-lucide="file-text" style="width: 14px; height: 14px;"></i>
+              <span>Load sample data</span>
+            </button>
+            <button type="button" class="btn-primary" onclick="runAMUVerification()">
+              <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+              <span>Run verification audit</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Epidemiological Biomass & mg/PCU Calculator Card -->
+      <div class="ui-panel" data-ui-radius>
+        <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h3>Epidemiological Biomass &amp; mg/PCU Normalization Engine</h3>
+              <p style="color: var(--muted); font-size: 14px;">Exploratory biomass and dose calculations using assumed weights and an unvalidated dose table. Requires the Python application.</p>
+            </div>
+            <div data-ui-actions style="gap: 8px;">
+              <button type="button" onclick="loadSamplePCUCensus()" style="font-size: 14px; min-height: 32px; padding: 4px 10px;"><span>Load Denmark sample</span></button>
+              <button type="button" class="btn-primary" onclick="computePCUEstimate()" style="min-height: 32px;">
+                <i data-lucide="calculator" style="width: 14px; height: 14px;"></i>
+                <span>Calculate mg/PCU</span>
+              </button>
+            </div>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px;">
+            <div data-ui-stack style="gap: 6px;">
+              <label for="pcu-swine" style="font-size: 12px; color: var(--muted);">Swine (head count)</label>
+              <input type="number" id="pcu-swine" value="12500000" min="0">
+            </div>
+            <div data-ui-stack style="gap: 6px;">
+              <label for="pcu-bovine" style="font-size: 12px; color: var(--muted);">Bovine / Cattle (head count)</label>
+              <input type="number" id="pcu-bovine" value="1500000" min="0">
+            </div>
+            <div data-ui-stack style="gap: 6px;">
+              <label for="pcu-poultry" style="font-size: 12px; color: var(--muted);">Poultry / Broilers (head count)</label>
+              <input type="number" id="pcu-poultry" value="18000000" min="0">
+            </div>
+            <div data-ui-stack style="gap: 6px;">
+              <label for="pcu-aquaculture" style="font-size: 12px; color: var(--muted);">Aquaculture (finfish heads)</label>
+              <input type="number" id="pcu-aquaculture" value="2500000" min="0">
+            </div>
+          </div>
+
+          <!-- PCU Result Cards Deck -->
+          <div id="pcu-result-deck" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; padding-top: 8px; border-top: 1px solid var(--ui-border);">
+            <div class="stat-card" style="padding: 10px 14px;">
+              <span class="stat-label">Total Biomass</span>
+              <span class="stat-value" id="pcu-total-tonnes" data-ui-number style="font-size: 18px;">- Tonnes</span>
+              <span class="stat-footnote" id="pcu-total-heads">- Total heads</span>
+            </div>
+            <div class="stat-card" style="padding: 10px 14px;">
+              <span class="stat-label">AMU Sales Intensity</span>
+              <span class="stat-value" id="pcu-mg-intensity" data-ui-number style="font-size: 18px; color: var(--accent);">- mg/PCU</span>
+              <span class="stat-footnote" id="pcu-tier-badge">Awaiting calculation</span>
+            </div>
+            <div class="stat-card" style="padding: 10px 14px;">
+              <span class="stat-label">Defined Daily Doses</span>
+              <span class="stat-value" id="pcu-dddvet-units" data-ui-number style="font-size: 18px;">- DDDvet</span>
+              <span class="stat-footnote" id="pcu-dddvet-per-animal">- doses/animal/yr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submission Input Deck: CSV / Excel Upload & JSON Editor -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+        <!-- Left: Spreadsheet Upload -->
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 12px; height: 100%; justify-content: space-between;">
+            <div data-ui-stack style="gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 14px; font-weight: 600;">Upload National AMU Spreadsheet</span>
+                <span style="font-size: 12px; color: var(--muted);">CSV or Excel (.xlsx)</span>
+              </div>
+              <p style="font-size: 12px; color: var(--muted);">Directly ingest wholesale antimicrobial sales reports without manual data re-entry.</p>
+              
+              <div id="amu-drop-zone" onclick="document.getElementById('amu-file-upload').click()"
+                   style="border: 1px dashed var(--ui-border); border-radius: 12px; padding: 24px; text-align: center; cursor: pointer; background: var(--ui-surface);">
+                <input type="file" id="amu-file-upload" style="display: none;" accept=".csv,.xlsx,.xls" onchange="handleAMUFileUpload(event)">
+                <i data-lucide="file-spreadsheet" style="width: 24px; height: 24px; margin: 0 auto 6px; color: var(--accent);"></i>
+                <p id="amu-upload-label" style="font-size: 14px; font-weight: 500;">Click to browse CSV / Excel file</p>
+                <p style="font-size: 12px; color: var(--muted); margin-top: 2px;">Supports .csv, .xlsx</p>
+              </div>
+            </div>
+
+            <div data-ui-actions style="justify-content: space-between; padding-top: 8px;">
+              <button type="button" onclick="downloadSampleAMUCsv()" style="font-size: 14px; min-height: 32px; padding: 4px 10px;">
+                <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+                <span>Download Sample CSV Template</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: JSON Payload Editor -->
+        <div class="ui-panel" data-ui-radius>
+          <div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label for="amu-submission-input" style="font-size: 14px; font-weight: 600;">National submission batch (JSON format)</label>
+              <span style="font-size: 12px; color: var(--muted);">Editable API payload</span>
+            </div>
+            <textarea id="amu-submission-input" rows="8" class="ui-numeric" style="font-size: 12px;"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verification Audit Results Summary -->
+      <div id="amu-results-container" data-ui-stack style="display: none;">
+        <!-- KPI Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          <div class="stat-card featured-card">
+            <span class="stat-label">Audit quality score</span>
+            <span class="stat-value" id="v-score" data-ui-number>-</span>
+            <span class="stat-footnote">Concordance index</span>
+          </div>
+          <div class="stat-card featured-card">
+            <span class="stat-label">Total active weight</span>
+            <span class="stat-value" id="v-total-kg" data-ui-number style="color: var(--accent);">-</span>
+            <span class="stat-footnote">Calculated kilograms</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">VCIA critically important</span>
+            <span class="stat-value" id="v-vcia-kg" data-ui-number style="color: #e11d48;">-</span>
+            <span class="stat-footnote" id="v-vcia-pct" data-ui-number>-</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Verified records</span>
+            <span class="stat-value" id="v-verified-count" data-ui-number style="color: var(--accent);">-</span>
+            <span class="stat-footnote">Concordant submissions</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Flagged / Divergent</span>
+            <span class="stat-value" id="v-warning-count" data-ui-number style="color: #d97706;">-</span>
+            <span class="stat-footnote" id="v-discrepancy-count" data-ui-number>-</span>
+          </div>
+        </div>
+
+        <!-- Detailed Audit Table -->
+        <div class="ui-panel" style="padding: 0; overflow: hidden;">
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--ui-border); background: var(--ui-surface-subtle); flex-wrap: wrap; gap: 8px;">
+            <h3>Itemized Cross-Check Audit</h3>
+            <div data-ui-actions style="gap: 8px;">
+              <button type="button" class="btn-primary" onclick="openWoahExportModal()">
+                <i data-lucide="shield-alert" style="width: 14px; height: 14px;"></i>
+                <span>WOAH ANIMUSE Export &amp; Certificate</span>
+              </button>
+              <button type="button" onclick="exportVerificationReport()">
+                <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+                <span>Export CSV audit report</span>
+              </button>
+            </div>
+          </div>
+          <div style="overflow-x: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 90px;">Record ID</th>
+                  <th scope="col" style="min-width: 180px;">Reported product</th>
+                  <th scope="col" style="text-align: right; width: 100px;" class="ui-numeric">Units sold</th>
+                  <th scope="col" style="min-width: 200px;">Matched reference product</th>
+                  <th scope="col" style="min-width: 160px;">Active substance</th>
+                  <th scope="col" style="text-align: right; min-width: 130px;" class="ui-numeric">Active weight (kg)</th>
+                  <th scope="col" style="min-width: 180px;">Status, Divergence &amp; Flags</th>
+                </tr>
+              </thead>
+              <tbody id="amu-table-body">
+                <!-- Populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- ====================================================================
+         TAB 5: WOAH Policy Brief & Methodology Deliverable
+         ==================================================================== -->
+    <section id="tab-brief" class="tab-panel" data-ui-stack style="display: none;">
+  <div class="ui-panel" data-ui-radius><div class="ui-surface" data-ui-radius-inner data-ui-stack style="gap: 16px; padding: 24px;">
+    <span class="badge badge-via">Methods and evidence</span>
+    <h2>Reference data that can be reviewed</h2>
+    <p>Extract veterinary antibiotic product details, explore reference records, and review package-to-ingredient calculations in one workspace.</p>
+    <p>The catalog is a curated demonstration, with incomplete record-level source evidence. The frequency charts describe catalog records, not global sales or national consumption. Parser scores reflect completeness, not calibrated confidence.</p>
+    <p>Extraction is evaluated on two illustrative English development fixtures. This does not establish independent or multilingual accuracy. Review the committed evaluation output for every field prediction and mismatch.</p>
+    <p>Biomass and dose calculations are exploratory. ANIMUSE-style exports, classifications, and regulatory screening rules require specialist validation. A SHA-256 checksum does not prove source authenticity.</p>
+    <p><a href="POLICY_BRIEF.md">Policy brief</a> · <a href="DATA_SOURCES_AND_METHODOLOGY.md">Data and methodology</a></p>
+    <p>VetAMR-AI is an independent application and is not an official WOAH or ANIMUSE service.</p>
+  </div></div>
+</section>
+
+  </main>
+
+  <!-- Product Inspection Modal Drawer -->
+  <div id="product-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container" data-ui-stack>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 12px; border-bottom: 1px solid var(--ui-border);">
+        <div data-ui-stack style="gap: 8px;">
+          <h3 id="modal-title">Product Details</h3>
+          <p id="modal-subtitle" style="font-size: 12px; color: var(--muted);">Registration record</p>
+        </div>
+        <button type="button" onclick="closeProductModal()" aria-label="Close dialog" style="font-size: 14px; min-height: 32px; padding: 4px 12px;">
+          <i data-lucide="x" style="width: 15px; height: 15px;"></i>
+          <span>Close</span>
+        </button>
+      </div>
+
+      <div id="modal-content" data-ui-stack style="gap: 16px;">
+        <!-- Populated dynamically -->
+      </div>
+
+      <div data-ui-actions data-ui-container style="justify-content: flex-end; padding-top: 12px; border-top: 1px solid var(--ui-border);">
+        <button type="button" onclick="closeProductModal()"><span>Close</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WOAH ANIMUSE Export & Report Checksum Modal -->
+  <div id="woah-export-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="woah-modal-title">
+    <div class="modal-container" data-ui-stack style="max-width: 720px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 12px; border-bottom: 1px solid var(--ui-border);">
+        <div data-ui-stack style="gap: 4px;">
+          <h3 id="woah-modal-title">WOAH ANIMUSE Official Submission Export</h3>
+          <p style="font-size: 12px; color: var(--muted);">Conforms to WOAH Global Database on Antimicrobial Use in Animals</p>
+        </div>
+        <button type="button" onclick="closeWoahExportModal()" aria-label="Close dialog" style="font-size: 14px; min-height: 32px; padding: 4px 12px;">
+          <i data-lucide="x" style="width: 15px; height: 15px;"></i>
+          <span>Close</span>
+        </button>
+      </div>
+
+      <!-- Certificate Box -->
+      <div class="certificate-box" data-ui-stack style="gap: 6px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; color: var(--accent);">Official Cryptographic Audit Certificate</span>
+          <span class="badge badge-via" id="woah-cert-status" style="font-size: 11px;">CERTIFIED</span>
+        </div>
+        <div style="font-family: var(--ui-mono); font-size: 12px; color: var(--ui-text);">
+          Certificate ID: <strong id="woah-cert-id">CERT-AMU-...</strong>
+        </div>
+        <div style="font-family: var(--ui-mono); font-size: 11px; color: var(--muted); word-break: break-all;">
+          SHA-256 Checksum: <span id="woah-cert-hash">...</span>
+        </div>
+      </div>
+
+      <!-- Option Selector Tabs -->
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button type="button" class="btn-primary" id="woah-opt1-btn" onclick="switchWoahOption(1)" style="font-size: 14px; min-height: 32px;"><span>Option 1: Antimicrobial Class</span></button>
+        <button type="button" id="woah-opt2-btn" onclick="switchWoahOption(2)" style="font-size: 14px; min-height: 32px;"><span>Option 2: Animal Group</span></button>
+        <button type="button" id="woah-opt3-btn" onclick="switchWoahOption(3)" style="font-size: 14px; min-height: 32px;"><span>Option 3: Species Matrix</span></button>
+      </div>
+
+      <!-- Option Preview Container -->
+      <div id="woah-preview-container" style="max-height: 240px; overflow-y: auto; border: 1px solid var(--ui-border); border-radius: 8px;">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Modal Footer Actions -->
+      <div data-ui-actions data-ui-container style="justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--ui-border);">
+        <button type="button" onclick="downloadWoahCsv()">
+          <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+          <span>Download Official Submission CSV</span>
+        </button>
+        <button type="button" onclick="closeWoahExportModal()"><span>Close</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divergence Risk Alert Detail Modal -->
+  <div id="divergence-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="div-modal-title">
+    <div class="modal-container" data-ui-stack style="max-width: 600px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 12px; border-bottom: 1px solid var(--ui-border);">
+        <div data-ui-stack style="gap: 4px;">
+          <h3 id="div-modal-title">International One Health Stewardship Discordance / Benchmark Divergence</h3>
+          <p id="div-modal-subtitle" style="font-size: 12px; color: var(--muted);">Cross-border international restriction and stewardship benchmark finding</p>
+        </div>
+        <button type="button" onclick="closeDivergenceModal()" aria-label="Close dialog" style="font-size: 14px; min-height: 32px; padding: 4px 12px;">
+          <i data-lucide="x" style="width: 15px; height: 15px;"></i>
+          <span>Close</span>
+        </button>
+      </div>
+      <div id="div-modal-body" data-ui-stack style="gap: 12px;">
+        <!-- Populated dynamically -->
+      </div>
+      <div data-ui-actions data-ui-container style="justify-content: flex-end; padding-top: 12px; border-top: 1px solid var(--ui-border);">
+        <button type="button" onclick="closeDivergenceModal()"><span>Dismiss</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" role="status" aria-live="polite"
+       style="position: fixed; bottom: 24px; right: 24px; z-index: 100; padding: 10px 16px; border-radius: 12px; background: var(--ui-surface); color: var(--ui-text); border: 1px solid var(--ui-border); box-shadow: 0 4px 12px rgba(0,0,0,0.12); display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateY(12px); transition: opacity 200ms ease, transform 200ms ease; pointer-events: none;">
+    <i data-lucide="info" style="width: 16px; height: 16px; color: var(--accent);"></i>
+    <span id="toast-message" style="font-size: 14px;">Notification</span>
+  </div>
+
+  <footer style="padding: 24px; text-align: center; color: var(--muted);">VetAMR-AI &middot; Veterinary Antibiotic Intelligence</footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
