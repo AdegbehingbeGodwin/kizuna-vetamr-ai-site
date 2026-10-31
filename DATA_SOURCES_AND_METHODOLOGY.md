@@ -6,8 +6,8 @@ Team Kizuna — Godwin Adegbehingbe — 31 October 2026
 
 The included dataset is a curated demonstration assembled from Python tables in
 `seed_database.py`, `seed_expanded.py`, `curator.py`, and `deep_scraper.py`.
-Despite the latter filename, its main input is a bundled list of records, not
-evidence of an executed web crawl. Authority names and registration identifiers
+These modules import bundled curation tables; their presence does not establish
+that a live regulatory crawl has been performed. Authority names and registration identifiers
 are reference leads; they do not establish that every field has been checked
 against a current official document.
 
@@ -16,7 +16,8 @@ EMA, APVMA, and national authorities in Africa, Asia, and Latin America. It is
 not a complete inventory of those registries. Source URLs, retrieval dates,
 document hashes, per-field citations, reuse permissions, and reviewer decisions
 must be collected before describing the catalog as verified regulatory evidence.
-The two bundled leaflets are illustrative fixtures with unverified source provenance.
+The two bundled leaflets are illustrative development fixtures; source-document
+verification remains part of the proposed validation study.
 
 ## Extraction and standardisation
 

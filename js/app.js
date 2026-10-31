@@ -99,7 +99,7 @@
 
 /**
  * VetAMR-AI Client Application
- * Standardized to the Apple-grade lintapple design specification.
+ * Browser interface for reference records, extraction, and AMU calculations.
  * Handles API queries, reactive visualizations, AI extraction, barcode resolution,
  * epidemiological PCU calculations, divergence tracking, and WOAH ANIMUSE verification.
  */
